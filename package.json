@@ -1,0 +1,31 @@
+{
+  "name": "ai-agent-ecosystem",
+  "version": "1.0.0",
+  "description": "AI Agent Ecosystem Test Suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:debug": "jest --detectOpenHandles --forceExit",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ]
+  }
+}
